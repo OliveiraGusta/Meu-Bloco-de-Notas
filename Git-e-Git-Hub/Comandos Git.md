@@ -106,7 +106,7 @@ git add *
 ~~~
 Ou:
 ~~~html
-git add.
+git add .
 ~~~
 
 ## Git commit
