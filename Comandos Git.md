@@ -37,6 +37,17 @@ Listar arquivos dentro da pasta + arquivos ocultos
 ls -a
 ~~~
 
+Criar uma pasta
+~~~html
+mkdir <nome_da_pasta>
+~~~
+
+Mover um arquivo para dentro de uma pasta
+~~~html
+mv <nome_do_arquivo> ./<nome_da_pasta>/
+~~~
+
+
 ## Git help
 Lista de comandos 
 ~~~html
@@ -109,7 +120,7 @@ Após confirmar as alterações, a próxima coisa que você deseja fazer é envi
 O comando git push envia e salva suas confirmações no repositório remoto
 
 ~~~html
-git push <remote> <nome-do-branch>
+git push <remote> <nome_do_branch>
 ~~~
 
 ## Git pull
