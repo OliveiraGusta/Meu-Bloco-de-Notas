@@ -3,7 +3,7 @@
 
 ![Comandos para executar no terminal ](https://miro.medium.com/max/1400/1*tLqVaCdc3oTaYSWZawneCA.png)
 
-# Lista de comandos 
+# Lista de codigos
 
 * git init
 * git clone
