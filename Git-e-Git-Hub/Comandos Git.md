@@ -12,6 +12,7 @@
 * git commit
 * git push
 * git pull
+* git log 
 
 # Explicação
 
@@ -128,6 +129,19 @@ O comando git pull é usado para obter atualizações do repositório remoto. O 
 
 ~~~html
 git pull <remote>
+~~~
+
+## Git log
+O comando log apresenta informações sobre o projeto
+
+Author e Data de Criação:
+~~~html
+git log 
+~~~
+
+Monstrar historico de commits 
+~~~html
+git log --oneline
 ~~~
 
 
