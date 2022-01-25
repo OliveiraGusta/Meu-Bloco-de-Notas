@@ -12,7 +12,9 @@
 * git commit
 * git push
 * git pull
+* git branch
 * git log 
+
 
 # Explicação
 
