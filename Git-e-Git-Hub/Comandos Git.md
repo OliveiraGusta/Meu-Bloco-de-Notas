@@ -131,6 +131,13 @@ O comando git pull é usado para obter atualizações do repositório remoto. O 
 git pull <remote>
 ~~~
 
+## Git branch
+Para renomear uma branch local no git só existe um comando. Essa comando pode ser usado caso a git inicei a branch com nome "Master" ao inves de "Main".
+~~~html
+ git branch -m "Novo Nome" 
+~~~
+
+
 ## Git log
 O comando log apresenta informações sobre o projeto
 
