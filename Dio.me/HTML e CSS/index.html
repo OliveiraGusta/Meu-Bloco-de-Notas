@@ -4,31 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>DIO.me</title>
+
 </head>
 <body>
     <header>
-            <img src="./assets/perfil.jpg" alt="imagem do rosto do Gustavo">
-         <h1>Gustavo Oliveira</h1> 
+            <img class="photo" src="./assets/perfil.jpg" alt="imagem do rosto do Gustavo" >
+         <h1 id="title">Gustavo Oliveira</h1> 
     </header>
 
     <section>
         <header>
-            <h2>Posts</h2>
+            <h2 class="subtitle">Posts</h2>
         </header>
 
-    <article>   
+    <article class="post">   
         <header>
-            <h3>Post #1</h3>
-            <img src="./assets/tecnologias.jpg" alt="Fundo preto com logos do React, Nodejs e HTML">
+            <h3 class="post_title">Post #1</h3>
+            <img class="post_image" src="./assets/tecnologias.jpg" alt="Fundo preto com logos do React, Nodejs e HTML">
         </header>
-        <p>
+        <p class="post_content">
             Estudante de Desenvolvimento de Sistemas , iniciei no <a href="https://github.com/OliveiraGusta" target="_blank">desenvolvimento</a> em 2021, sempre busco aprender mais e ser melhor a cada dia, tanto novas como antigas tecnologias.
 Possuo foco em desenvolvimento com Javascript e Java, mas não me prendo quando o assunto é aprender uma nova linguagem ou conceito.
 Me definiria como focado, ágil e resiliente em tudo que eu faço, estudo todo dia e sempre busco estar contextualizado sobre o imenso mundo de tecnologia da informação, topo qualquer desafio.
         </p>
     </article>
     </section>  
-    <footer></footer>
+
+    <footer>
+        <ul class="contacts_list">
+            <li>
+                <a href="mailto:gustavo.oliver456@gmail.com" target="_blank">
+                gustavo.oliver456@gmail.com
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/oliveiragusta/" target="_blank">
+                Linkedin
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/OliveiraGusta" target="_blank">
+                Github
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>
