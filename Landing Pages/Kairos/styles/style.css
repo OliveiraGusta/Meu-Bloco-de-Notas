@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,700&display=swap');
+/*font-family: 'Lora';*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+/*font-family: 'Montserrat';*/
+
+body{
+    
+    background-color:#131111;
+
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+    
+    color:#ffff;
+    font-family:'Lora', Times, serif;
+
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 15px;
+}
+img {
+    width: 500px;
+    border: 1.5px solid #fff;
+    border-radius: 25%;
+
+}
+
+header{
+    display:flex;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: whitesmoke;
+    color:#131111;
+
+    margin:0;
+    margin-top: -15px;
+    z-index: 1;
+    
+
+    width: 100%;
+}
+
+
+#title{
+    flex-direction: column;
+    line-height: 10px;  
+ 
+}
+
+#title-kairos{
+    font-weight: bold;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display:flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+aside{
+    margin: 10px
+}
+h2{
+    font-size: 55px;
+    line-height: 10px; 
+    font-family: 'Montserrat', Times, serif;
+    
+
+}
+
+span{
+    color:brown;
+}
+p{
+    line-height: 20px;
+    max-width: 500px;
+   
+}
+
+a{
+    box-shadow: 0px 0px 0px 0px #131111;
+    border-radius: 20px;
+
+    color: #131111;
+    
+    padding: 10px;
+    
+}
+
+a:hover{
+    transition: 1s all;
+
+    box-shadow: 0px 0px 1px 2px #131111;
+}
+
+#subscribe-btn{
+    box-shadow: 0px 0px 1px 2px #131111;
+}
+
+#subscribe-btn:hover{
+    transition: 1s all;
+    background-color: #131111;
+    color: #fff;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    border:none;
+    font-size: 15px;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+
+    background-color: brown;
+    color: #fff;
+
+    font-weight: bold;
+    
+    margin: 20px auto;
+}
+
+form [type="submit"]:hover{
+    transition: 1s all;
+
+    background-color: #fff;
+    color: #131111;
+    cursor: pointer;
+}
+
+
+
+
+form{
+    display: flex;
+    flex-direction:column;
+    width: 70%;
+}
+
+
+
+
