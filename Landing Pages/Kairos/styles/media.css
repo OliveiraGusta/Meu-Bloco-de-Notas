@@ -1,0 +1,81 @@
+@media screen and ( max-width: 760px){
+
+    body{
+        overflow-x: hidden;
+       
+    }
+    main{
+        flex-direction: column;
+    }
+    h2{
+        font-size: 38px;
+    } 
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+    img{
+        margin: 10px -10px 10px -5px;
+        
+    }
+
+    
+    #subscribe-btn{
+        box-shadow: 0px 0px 0px 0px #131111;
+    }
+    
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+
+        
+        background:  whitesmoke;
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .mobile-menu{
+        display: block;
+        transition: 0.3s;
+    }
+    .nav-list.active{
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+      
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+      transition: 1s all;
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+    transition: 1s all;
+  }
+  
+  .mobile-menu.active .line2 {
+    transition: 1s all;
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transition: 1s all;
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
