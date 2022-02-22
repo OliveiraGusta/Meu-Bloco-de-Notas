@@ -4,12 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
 /*font-family: 'Montserrat';*/
+
+/*----Reset--*/
 *{
     margin: 0;
     padding: 0;
-    
-    
 }
+
 
 body{
     overflow-x: hidden;
@@ -19,35 +20,37 @@ body{
     color: whitesmoke;
     font-family:'Lora', Times, serif;
 
-    /*max-width:1200px;*/
+    max-width:1200px;
 
     margin: 0 auto;
     width: 100vw;
     padding: 15px 0 15px 0 ;
 }
 
+
+/* ------ NAV BAR -----*/
 header{
     flex-direction: row;
     
     background-color: whitesmoke;
     color:#131111;
 
-    border-radius: 10px;
+    border-radius: 25px;
 
-    margin-top: -25px;
+    margin-top: -35px;
    
     z-index: 1;
+ 
     
 
 }
 
 .nav{
-
     display:flex;
     align-items: center;
     justify-content: space-around;
+    padding: 15px
    
-    
 }
 
 .mobile-menu {
@@ -98,7 +101,7 @@ main{
     flex-direction: row;
     margin-top: 50px;
 }
-aside{
+aside, nav{
     margin: 0 20px 0 50px;
     
 }
@@ -157,8 +160,20 @@ a:hover{
     width: 500px;
     border: 1.5px solid  whitesmoke;
     border-radius: 25%;
-
+    margin-left:50px;
+    align-items: right;
 }
+
+.kairos-cutting-hair:hover{
+
+    border: 1.5px solid  whitesmoke;
+    border-radius: 50%;
+    transition: 1s all;
+    transform: scale(1.05);
+   
+}
+
+
 
 input{
     margin-top: 20px;
@@ -197,46 +212,47 @@ form{
 
 
 footer{
-    height: 60px;
     display: flex;
     align-items: center;
+
     margin-bottom: 2%;
     margin-right: 5%;
+   
+    
 }
 
-#karios-money-icon{
-    color: var(--light-green);
+
+.kairos-icon-contact:hover{
+    transition: 1s all;
+    transform: scale(1.5);
+}
+
+.kairos-icon-container{
+    padding: 0 8px;
+}
+
+.contact-name{
+    color: whitesmoke;
+    
+}
+
+.contact-name:hover{
+    transition: 1s all;
+    transform: scale(1.05);
+
     font-weight: bold;
+   
+  
 }
 
-.karios-icon-contact{
-    margin-left: 10px;
-}
-
-
-.karios-icon-contact:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    transition: all .2500s ease-in-out; 
-}
-
-.karios-nav-content{
+.container-footer{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    color: var(--dark-blue);
+
+    width: min(90Vw, 800px);
+    margin: auto;
 }
 
-.karios-contact-container{
-    display: flex;
-    align-items:center;
-}
-
-.karios-contact-name{
-    margin: 5px 10px 0 5px;
-    font-size: 1rem;
-    color: var(--dark-blue);
-}
 
 
 
