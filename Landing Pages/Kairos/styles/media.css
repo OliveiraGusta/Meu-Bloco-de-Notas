@@ -1,5 +1,6 @@
 @media screen and ( max-width: 999px){
-
+  
+    /* ------ BASE -----*/  
     body{
         overflow-x: hidden;
        
@@ -7,13 +8,16 @@
     main{
         flex-direction: column;
     }
+
+    /* ------ TITLES -----*/
     h2{
         font-size: 38px;
         margin-top: 10px;
         line-height: 100%;
 
     } 
-
+    
+    /* ------ FORM -----*/
     form{     
         width: 100%;
     }
@@ -26,11 +30,12 @@
       font-size: 87.5%;
   }
 
-    
     #subscribe-btn{
         box-shadow: 0px 0px 0px 0px #131111;
     }
     
+/* ------ MOBILE NAV BAR -----*/
+
     .nav-list{
         position: absolute;
         top: 8vh;

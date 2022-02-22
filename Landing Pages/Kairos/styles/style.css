@@ -1,3 +1,4 @@
+/* ------ GOOGLE FONTS -----*/
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,700&display=swap');
 /*font-family: 'Lora';*/
@@ -5,87 +6,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
 /*font-family: 'Montserrat';*/
 
-/*----Reset--*/
-*{
+
+/* ------VARIABLES-----*/
+
+:root{
+    /* ------ Colors -----*/
+    --brown:#131111;
+
+    /* ------ Fonts -----*/ 
+    --body-font: 'Lora', Times, serif;
+    --subtitle-font: 'Montserrat', Times, serif;
+}
+
+
+/* ------ RESET -----*/
+* {
     margin: 0;
     padding: 0;
 }
 
+/* ------ BASE -----*/
 
-body{
+body {
     overflow-x: hidden;
 
-    background-color:#131111;
+    background-color: var(--brown);
 
     color: whitesmoke;
-    font-family:'Lora', Times, serif;
+    font-family: var(--body-font);
 
-    max-width:1200px;
+    max-width: 1200px;
 
     margin: 0 auto;
     width: 100vw;
-    padding: 15px 0 15px 0 ;
+    padding: 15px 0 15px 0;
 }
 
-
-/* ------ NAV BAR -----*/
-header{
+main {
+    display: flex;
     flex-direction: row;
-    
-    background-color: whitesmoke;
-    color:#131111;
 
-    border-radius: 25px;
+    margin-top: 50px;
+}
 
-    margin-top: -35px;
-   
-    z-index: 1;
- 
-    
+aside, nav {
+    margin: 0 20px 0 50px;
+}
+
+span {
+    color: brown;
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
 
 }
 
-.nav{
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 15px
-   
+a {
+    box-shadow: 0px 0px 0px 0px var(--brown);
+    border-radius: 20px;
+
+    color: var(--brown);
+
+    padding: 10px;
+
 }
 
-.mobile-menu {
-    cursor: pointer;
-    display: none;
+a:hover {
+    transition: 1s all;
+
+    box-shadow: 0px 0px 1px 2px var(--brown);
 }
 
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background:#131111;
-    margin: 8px;
-}
+/* ------ TITLES -----*/
 
-
-
-
-
-#title{
-    flex-direction: column;
-    line-height: 10px;  
-    margin-top: 2px;
- 
-}
-
-#title-kairos{
-    font-weight: bold;
-}
-
-li{
-    display: inline-block;
-    margin: 20px;
-}
-
-h1{
+h1 {
     font-weight: 200;
     font-size: 2em;
 
@@ -96,21 +92,11 @@ h1{
     margin-inline-end: 0px;
 }
 
-main{
-    display:flex;
-    flex-direction: row;
-    margin-top: 50px;
-}
-aside, nav{
-    margin: 0 20px 0 50px;
-    
-}
-
-h2{
+h2 {
     font-size: 55px;
-    line-height: 10px; 
-    font-family: 'Montserrat', Times, serif;
-    
+    line-height: 10px;
+    font-family: var(--subtitle-font);
+
     /*Margens Padroes h2*/
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
@@ -119,143 +105,165 @@ h2{
 
 }
 
-span{
-    color:brown;
+#title {
+    flex-direction: column;
+
+    line-height: 10px;
+    margin-top: 2px;
+
 }
 
-p{
-    line-height: 20px;
-    max-width: 500px;
-   
+#title-kairos {
+    font-weight: bold;
 }
 
-a{
-    box-shadow: 0px 0px 0px 0px #131111;
-    border-radius: 20px;
+/* ------ NAV BAR -----*/
+header {
+    flex-direction: row;
 
-    color: #131111;
+    background-color: whitesmoke;
+    color: var(--brown);
+
+    border-radius: 25px;
+
+    margin-top: -35px;
+
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 15px
+}
+li {
+    display: inline-block;
+
+    margin: 20px;
+}
+
+/* ------ MOBILE NAV BAR -----*/
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+
+    background: var(--brown);
     
-    padding: 10px;
-    
 }
 
-a:hover{
-    transition: 1s all;
-
-    box-shadow: 0px 0px 1px 2px #131111;
-}
-
-#subscribe-btn{
-    box-shadow: 0px 0px 1px 2px #131111;
-}
-
-#subscribe-btn:hover{
-    transition: 1s all;
-    background-color: #131111;
-    color: #fff;
-}
-
+/* ------ IMAGES -----*/
 
 .kairos-cutting-hair {
     width: 500px;
-    border: 1.5px solid  whitesmoke;
+    border: 1.5px solid whitesmoke;
     border-radius: 25%;
-    margin-left:50px;
+    margin-left: 50px;
     align-items: right;
 }
 
-.kairos-cutting-hair:hover{
+.kairos-cutting-hair:hover {
 
-    border: 1.5px solid  whitesmoke;
+    border: 1.5px solid whitesmoke;
     border-radius: 50%;
     transition: 1s all;
     transform: scale(1.05);
-   
+
 }
 
 
+/* ------ FORM -----*/
 
-input{
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input {
     margin-top: 20px;
     height: 20px;
     padding: 15px;
     border-radius: 25px;
-    border:none;
+    border: none;
     font-size: 15px;
 }
 
-form [type="submit"]{
+form [type="submit"] {
     height: 50px;
     width: 50%;
 
     background-color: brown;
-    color: #fff;
+    color: whitesmoke ;
 
     font-weight: bold;
-    
+
     align-self: center;
 }
 
-form [type="submit"]:hover{
+form [type="submit"]:hover {
     transition: 1s all;
 
-    background-color: #fff;
-    color: #131111;
+    background-color: whitesmoke;
+    color: var(--brown);
     cursor: pointer;
 }
 
-form{
-    display: flex;
-    flex-direction:column;
-    width: 70%;
+#subscribe-btn {
+    box-shadow: 0px 0px 1px 2px var(--brown);
+}
+
+#subscribe-btn:hover {
+    transition: 1s all;
+    background-color: var(--brown);
+    color: whitesmoke;
 }
 
 
-footer{
+/* ------ FOOTER -----*/
+
+footer {
     display: flex;
     align-items: center;
 
     margin-bottom: 2%;
     margin-right: 5%;
-   
-    
 }
 
 
-.kairos-icon-contact:hover{
+.kairos-icon-contact:hover {
     transition: 1s all;
     transform: scale(1.5);
 }
 
-.kairos-icon-container{
+.kairos-icon-container {
     padding: 0 8px;
 }
 
-.contact-name{
+.contact-name {
     color: whitesmoke;
-    
+
 }
 
-.contact-name:hover{
+.contact-name:hover {
     transition: 1s all;
     transform: scale(1.05);
 
     font-weight: bold;
-   
-  
 }
 
-.container-footer{
+.container-footer {
     display: flex;
     align-items: center;
 
     width: min(90Vw, 800px);
     margin: auto;
 }
-
-
-
-
-
-
-
