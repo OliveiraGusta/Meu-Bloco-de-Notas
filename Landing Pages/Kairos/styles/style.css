@@ -32,6 +32,8 @@ header{
     background-color: whitesmoke;
     color:#131111;
 
+    border-radius: 10px;
+
     margin-top: -25px;
    
     z-index: 1;
@@ -92,7 +94,6 @@ h1{
 }
 
 main{
-    
     display:flex;
     flex-direction: row;
     margin-top: 50px;
@@ -118,6 +119,7 @@ h2{
 span{
     color:brown;
 }
+
 p{
     line-height: 20px;
     max-width: 500px;
@@ -151,8 +153,8 @@ a:hover{
 }
 
 
-img {
-    width: 620px;
+.kairos-cutting-hair {
+    width: 500px;
     border: 1.5px solid  whitesmoke;
     border-radius: 25%;
 
@@ -192,6 +194,51 @@ form{
     flex-direction:column;
     width: 70%;
 }
+
+
+footer{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-right: 5%;
+}
+
+#karios-money-icon{
+    color: var(--light-green);
+    font-weight: bold;
+}
+
+.karios-icon-contact{
+    margin-left: 10px;
+}
+
+
+.karios-icon-contact:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all .2500s ease-in-out; 
+}
+
+.karios-nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark-blue);
+}
+
+.karios-contact-container{
+    display: flex;
+    align-items:center;
+}
+
+.karios-contact-name{
+    margin: 5px 10px 0 5px;
+    font-size: 1rem;
+    color: var(--dark-blue);
+}
+
+
 
 
 

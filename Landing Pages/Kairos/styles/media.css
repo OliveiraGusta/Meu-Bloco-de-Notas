@@ -9,20 +9,22 @@
     }
     h2{
         font-size: 38px;
-        
+        margin-top: 10px;
+        line-height: 100%;
+
     } 
-    form{
-        margin: 0 auto;
+
+    form{     
         width: 100%;
     }
-    img{
-        
-      display: none;
-        
+
+    .kairos-cutting-hair{ 
+      display: none; 
     }
-    span{
-      margin-bottom: 500px ;
-    }
+    
+    form [type="submit"]{
+      font-size: 87.5%;
+  }
 
     
     #subscribe-btn{
