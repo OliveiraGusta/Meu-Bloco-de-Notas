@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     
+    
 }
 
 body{
@@ -18,42 +19,34 @@ body{
     color: whitesmoke;
     font-family:'Lora', Times, serif;
 
-    max-width: 1200px;
+    /*max-width:1200px;*/
+
     margin: 0 auto;
-    padding: 15px;
+    width: 100vw;
+    padding: 15px 0 15px 0 ;
 }
 
 header{
-    
-    
-    display:flex;
-
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
+    
     background-color: whitesmoke;
     color:#131111;
 
-    border-radius: 10px;
-
     margin-top: -25px;
-    width: 100vw;
-
+   
     z-index: 1;
-}
-
-
-
-
-img {
-    width: 500px;
-    border: 1.5px solid  whitesmoke;
-    border-radius: 25%;
+    
 
 }
 
+.nav{
 
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+   
+    
+}
 
 .mobile-menu {
     cursor: pointer;
@@ -66,6 +59,10 @@ img {
     background:#131111;
     margin: 8px;
 }
+
+
+
+
 
 #title{
     flex-direction: column;
@@ -95,13 +92,16 @@ h1{
 }
 
 main{
+    
     display:flex;
     flex-direction: row;
     margin-top: 50px;
 }
 aside{
-    margin: 10px
+    margin: 0 20px 0 50px;
+    
 }
+
 h2{
     font-size: 55px;
     line-height: 10px; 
@@ -150,6 +150,14 @@ a:hover{
     color: #fff;
 }
 
+
+img {
+    width: 620px;
+    border: 1.5px solid  whitesmoke;
+    border-radius: 25%;
+
+}
+
 input{
     margin-top: 20px;
     height: 20px;
@@ -178,9 +186,6 @@ form [type="submit"]:hover{
     color: #131111;
     cursor: pointer;
 }
-
-
-
 
 form{
     display: flex;
